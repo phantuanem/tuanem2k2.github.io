@@ -1,0 +1,38 @@
+﻿document.addEventListener("DOMContentLoaded",function(){
+	var nut_search=document.querySelector('.nut-search'),
+		form_search=document.querySelector('.form-search'),
+		tiemkiem=document.querySelector('.timkiem'),
+		bagach=document.querySelector('.bagach'),
+		menu2=document.querySelector('.menu2');
+	nut_search.onclick=function(){
+		form_search.classList.toggle('form-search-hien');
+	}
+	tiemkiem.onclick=function(){
+		form_search.classList.remove('form-search-hien')
+	}
+	bagach.onclick=function(){
+		menu2.classList.toggle('menu2ra');
+		console.log('hihi')
+	}
+	var tam=0,
+		menutop=document.querySelector('.menu'),
+		menu1top=document.querySelector('.menu1'),
+		max=0;
+	window.addEventListener("scroll",function(){
+		if(window.pageYOffset<max){
+			menutop.classList.add('menutop');
+			menu1top.classList.add('menu1top');
+			max=window.pageYOffset;
+		}
+		if(window.pageYOffset>max){
+			menutop.classList.remove('menutop');
+			menu1top.classList.remove('menu1top');
+			max=window.pageYOffset;
+		}
+		if(window.pageYOffset==0){
+			menutop.classList.remove('menutop');
+			menu1top.classList.remove('menu1top');
+			max=0;
+		}
+	})
+},false)

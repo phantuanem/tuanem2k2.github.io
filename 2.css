@@ -1,0 +1,79 @@
+*{margin:0;padding:0; }
+
+
+ @media only screen and (min-width: 0px) and (max-width: 750px){
+ 	.phanthan1{
+ 		margin-top: 15px
+ 	}
+    .menu .menu1{
+        display: none;
+    }
+    .menu{
+        height: 20px;
+        background: #f3711;
+    }
+    .bagach {
+    float: left;
+    width: 12px;
+    margin-top: 4px;
+    margin-left: -13px;
+    display: block;
+    cursor: pointer;
+	}
+
+	.menu hr {
+	    border: 1px solid black;
+	    margin: 2px;
+	    width: 10px;
+	    background: black;
+	}
+	.menu .menu2 .search {
+	    display: none;
+	}
+
+	.menu .menu2 .diembaogi {
+	    display: none;
+	}
+
+	.menu .menu2 a {
+	    color: white;
+	    font-weight: 600;
+	    text-decoration: none;
+	}
+
+	.menu .menu2 li.list-group-item {
+	    background: none;
+	    color: white;
+	    float: none;
+	}
+
+	.menu .menu2 li.list-group-item:hover {
+	    background: #00000085;
+	}
+
+	.menu .menu2 ul.list-group li {
+	    background: none;
+	}
+
+	.menu .menu1 {
+	    display: none;
+	}
+
+	.menu .menu2 {
+	    width: 100%;
+	    height: 100%;
+	    position: fixed;
+	    z-index: 20;
+	    top: 20px;
+	    background: #0000008f;
+	    left: 0px;
+	    left: -100%;
+	    transition:0.4s;
+	}
+	.menu2ra{
+		transform:translateX(100%);
+	}
+	.menu ul.list-group.mangxahoi {
+    	display: block !important;
+	}
+}
